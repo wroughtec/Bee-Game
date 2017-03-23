@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3 p-2" ng-repeat="bee in vm.bees track by $index">
+      <ul class="list-group">
+        <li class="list-group-item">{{bee.name}}</li>
+        <li class="list-group-item">{{bee.hp}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-2 text-center">
+      <button class="btn btn-primary btn-block" ng-click="vm.hitBee()">Hit a Bee</button>
+    </div>
+  </div>
+</div>
+
